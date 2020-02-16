@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 01</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mauricio Alvarez Milán - A01704948@itesm.mx</h1>
+        </header>
+
+        <section class="sobre_mi">
+            <h2>Sobre Mí</h2>
+            <p>
+                ¡Hola! Mi nombre es Mauricio Alvarez Milán, pero prefiero que me
+                digan Mau. Estudio Ingeniería en Sistemas Computacionales, voy en
+                4to semestre y tengo 20 años. Me considero una persona introvertida
+                y puedo tardar un buen rato en agarrar confianza con nuevas personas.
+                <br>
+                Me apasiona la música, tanto escucharla como tocarla (en especial
+                el rock, tanto en inglés como en español). En mis tiempos libres
+                me la paso escuchando a mis grupos favoritos, en especial Radiohead.
+                <br>
+                Me gusta practicar ping-pong (o Tenis de Mesa para los finos), y
+                hace poco comencé a escalar y me fascina.
+                <br>
+                <img src="res/radiohead.jpg" alt="Radiohead" width="200">
+                <img src="res/bouldering.jpg" alt="Escalada" width="200">
+                <img src="res/tabletennis.png" alt="Tenis de Mesa" width="200" height="160">
+            </p>
+        </section>
+        <hr>
+
+        <section class="definiciones">
+            <h2>Definiciones</h2>
+            <dl class="lista_definiciones">
+                <dt><strong>URL:</strong></dt>
+                <dd>Sus siglas significan <em>"Uniform Resource Locator"</em>. Es
+                la dirección de una  página web específica o archivo en internet. [1]</dd>
+
+                <dt><strong>MIME:</strong></dt>
+                <dd>
+                    Significa Multi-Purpose Internet Mail Extensions. Como su nombre
+                    lo indica, es una extension al protocolo de correo electrónico,
+                    permite al usuario intercambiar archivos a través del internet,
+                    como imágenes, audio y video. [2]
+                </dd>
+
+                <dt><strong>Métodos y códigos de error HTTP:</strong></dt>
+                <dd>
+                    HTTP define un conjunto de <strong>métodos de solicitud</strong>
+                    para indicar la acción deseada para un recurso dado. A éstos métodos
+                    se les llama <em>vebos HTTP</em>. [3]
+                </dd>
+
+                <dt><strong>HTML5:</strong></dt>
+                <dd>Es el estándar más reciente de HTML (Hypertext Markup Language). [4]</dd>
+
+                <dt><strong>JS:</strong></dt>
+                <dd>
+                    JavaScript es un lenguaje de programación que permite implementar
+                    características complejas en páginas web. Es decir, maneja el
+                    comportamiento de una página web. [5]
+                </dd>
+
+                <dt><strong>PHP:</strong></dt>
+                <dd>
+                    PHP: Hypertext Processor es un lenguaje de programación adecuado
+                    para desarrollo web y que puede ser embebido en HTML. [6]
+                </dd>
+
+                <dt><strong>JSP:</strong></dt>
+                <dd>
+                    JavaServer Pages es una tecnología estándar de Java que permite
+                    escibir páginas dinámicas para aplicaciones web de Java. [7]
+                </dd>
+
+                <dt><strong>AJAX:</strong></dt>
+                <dd>
+                    Asynchronous JavaScript And XML es un conjunto de técnicas
+                    para construir sitios y aplicaciones web. La función principal
+                    de AJAX es actualizar contenido web sin necesidad de refrescar
+                    el navegador. [8]
+                </dd>
+            </dl>
+        </section>
+        <hr>
+
+        <section class="preguntas">
+            <h2>Preguntas a Responder</h2>
+            <article class="pregunta">
+                <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+                <p>
+                    El internet es una red de redes global, una conección entre
+                    millones de computadoras, servidores, y dispositivos. Mientras
+                    que la World Wide Web es un sistema estandarizado para accesar
+                    y navegar en internet.
+                    <br>
+                    Visto de otra forma, el internet es la infraestructura, y la
+                    World Wide Web es un servicio que utiliza dicha infraestructura. [9]
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+
+                <dl class="metodos_http">
+                    <dt><strong>GET:</strong></dt>
+                    <dd>
+                        El método <strong>GET</strong> se usa para "leer" o recuperar la
+                        representación de un recurso. Retorna un archivo XML o JSON, además
+                        de un código de respuesta HTTP de 200 (OK). EN caso de un error,
+                        regresa un código 404 (NOT FOUND) o 400 (BAD REQUEST). [10]
+                        <br>
+                        <strong>Ejemplos:</strong>
+                        <br>
+                        <ul>
+                            <li>GET http://www.ejemplo.com/123</li>
+                            <li>GET http://www.ejemplo/seccion/123</li>
+                            <li>GET http://www.ejemplo/seccion/articulo</li>
+                        </ul>
+                    </dd>
+
+                    <dt><strong>HEAD:</strong></dt>
+                    <dd>
+                        Es idéntico al método GET, con la excepción de que debe
+                        retornar únicamente el encabezado en la respuesta. [10]
+                    </dd>
+
+                    <dt><strong>POST:</strong></dt>
+                    <dd>
+                        Se utiliza por lo general para crear nuevos recursos. En
+                        particular, para crear recursos subordinados a un recurso "padre".
+                        Cuando se crea este nuevo recurso, retorna un código de 201 (Created),
+                        junto con un header de ubicación con un link al nuevo recurso. [10]
+                        <br>
+                        <strong>Ejemplos:</strong>
+                        <ul>
+                            <li>POST http://www.ejemplo.com/seccion</li>
+                            <li>POST http://www.ejemplo.com/seccion/articulo</li>
+                        </ul>
+                    </dd>
+
+                    <dt><strong>PUT:</strong></dt>
+                    <dd>
+                        Se utiliza para actualizar recursos. Es decir, modificar un
+                        recurso creado previamente con los nuevos datos. Cuando se
+                        actualiza exitosamente un recurso, retorna un código de 200 (OK).
+                        [10]
+                        <br>
+                        <strong>Ejemplos:</strong>
+                        <br>
+                        <ul>
+                            <li>PUT www.ejemplo.com/nueva_seccion</li>
+                            <li>PUT www.ejemplo.com/seccion/nuevo_articulo</li>
+                        </ul>
+                    </dd>
+
+                    <dt><strong>PATCH:</strong></dt>
+                    <dd>
+                        Este método se usa para capacidades de modificación. Sólo se
+                        necesita  contener los cambios al recurso, no <em>todo</em>
+                        el recurso. Sin embargo, el cuerpo no sólo debe ser la
+                        parte modificada del recurso, tiene que estar en algún lenguaje
+                        de parcheo, como JSON Patch o XML Patch. [11]
+                    </dd>
+                    <dt><strong>DELETE:</strong></dt>
+                    <dd>Como su nombre lo indica, se usa para eliminar un recurso.</dd>
+                </dl>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h3>
+                <p>
+                    Se puede utilizar el método POST, porque estamos
+                    solicitando al servidor que nos regrese la información contenida
+                    en el formulario.
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h3>
+                <p>
+
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h3>
+                <p>
+                    Al contrario, significa que la solicitud fue exitosa y se ha
+                    completado correctamente. Significa "OK".
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h3>
+                <p>
+                    Depende; si el usuario ingresó una entrada que no existe, es culpa de él.
+                    En cambio, si el mismo sitio llevó al usuario a un erro 404, la culpa es del desarrollador
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h3>
+                <p>
+                    Sí, es responsabilidad del desarrollador, pues él es quien
+                    se encarga del servidor.
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h3>
+                <p>
+                    Se refiere a que está en proceso de ser reemplazado por otro en una versión más nueva.
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h3>
+                <p>
+                    El soporte de elementos multimedia como audio y video.<br>
+                    Se simplifican varias caracterísiticas como el DOCTYPE.<br>
+                    HTML5 maneja mejor los errores, dando consistencia a los archivos.<br>
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+                <h4>Estructura</h4>
+                <ul>
+                    <li>tr</li>
+                    <li>td</li>
+                    <li>th</li>
+                    <li>caption</li>
+                    <li>colgroup</li>
+                    <li>col</li>
+                    <li>thead</li>
+                    <li>tbody</li>
+                    <li>tfoot</li>
+                </ul>
+                <h4>Estilo</h4>
+                <ul>
+                    <li>border</li>
+                    <li>border-collapse</li>
+                    <li>padding</li>
+                    <li>text-align</li>
+                    <li>border-spacing</li>
+                    <li>colspan</li>
+                    <li>rowspan</li>
+                    <li>id</li>
+                </ul>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Cuáles son los principales controles de una forma HTML5?</h3>
+                <ul>
+                    <li>Text Box input</li>
+                    <li>Password input</li>
+                    <li>Área de texto</li>
+                    <li>Drop Down</li>
+                    <li>Check Box</li>
+                    <li>Radio input</li>
+                    <li>File input</li>
+                    <li>Submit Button</li>
+                </ul>
+            </article>
+
+            <article class="pregunta">
+                <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h3>
+                <p>
+                    Google Chrome: 481/555.
+                </p>
+            </article>
+
+            <article class="pregunta">
+                <h3>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h3>
+                <h4>¿Cuál es el ciclo de vida de los sistemas de información?</h4>
+                <p>
+                    Si tomamos como referencia el "Modelo en cascada":
+                </p>
+                    <ol>
+                        <li>Planificación</li>
+                        <li>Análisis</li>
+                        <li>Diseño</li>
+                        <li>Implementación</li>
+                        <li>Pruebas</li>
+                        <li>Mantenimiento [12]</li>
+                    </ol>
+                <h4>¿Cuál es el ciclo de desarrollo de sistemas de información?</h4>
+                    <ol>
+                        <li>Identificación de problemas, oportunidades y objetivos.</li>
+                        <li>Determinación de requerimientos.</li>
+                        <li>Análisis de necesidades del sistema.</li>
+                        <li>Diseño del sistema.</li>
+                        <li>Desarrollo y documentación.</li>
+                        <li>Pruebas y mantenimiento.</li>
+                        <li>Implantación y evaluación del sistema. [12]</li>
+                    </ol>
+            </article>
+        </section>
+        <hr>
+
+        <section class="fuentes">
+            <h2>Fuentes Consultadas:</h2>
+            <ul>
+                <li>[1] https://techterms.com/definition/url</li>
+                <li>[2] https://www.interserver.net/tips/kb/mime-multi-purpose-internet-mail-extensions/</li>
+                <li>[3] https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</li>
+                <li>[4] https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5</li>
+                <li>[5] https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript</li>
+                <li>[6] https://www.php.net/manual/en/intro-whatis.php</li>
+                <li>[7] https://www.javaworld.com/article/3336161/what-is-jsp-introduction-to-javaserver-pages.html</li>
+                <li>[8] https://skillcrush.com/blog/what-is-ajax/</li>
+                <li>[9] https://www.pageonepower.com/linkarati/difference-between-internet-world-wide-web</li>
+                <li>[10] https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html</li>
+                <li>[11] https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</li>
+                <li>[12] Fernando Berzal, El ciclo de vida de un sistema de información, 23-25, 2005.</li>
+            </ul>
+        </section>
+
+        <hr>
+        <footer>Hecho en editor de texto <a href="https://atom.io/" target="_blank">Atom</a>. Febrero del 2020.</footer>
+
+    </body>
+</html>
