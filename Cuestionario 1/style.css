@@ -1,0 +1,32 @@
+body {
+
+    background-color: #142850;
+    font-family: "Arial", sans-serif;
+}
+
+h1, footer{
+    text-align: center;
+    color: white;
+}
+.preguntas, .fuentes {
+    background-color: #00a8cc;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.pregunta {
+    font-style: italic;
+}
+
+.respuesta {
+    font-style: normal;
+}
+
+dt {
+    font-weight: bold;
+}

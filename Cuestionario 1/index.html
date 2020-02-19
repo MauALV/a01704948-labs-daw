@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Cuestionario 1: BD vs DBMS </title>
+    </head>
+    <body>
+        <h1>Cuestionario 1: BD vs DBMS</h1>
+        <hr>
+        <section class="preguntas">
+            <h2>Preguntas a responder:</h2>
+            <article class="pregunta" id="pregunta_1">
+                <h3>¿Qué es entonces una base de datos - BD?</h3>
+
+                <p class="respuesta"> Una base de datos es un conjunto de
+                    archivos en los que existen múltiples ocurrencias de un
+                    mismo tipo de registro, y están interrelacionados entre sí.
+                </p>
+            </article>
+
+            <article class="pregunta" id="pregunta_2">
+                <h3>¿En qué casos es conveniente usar bases de datos?</h3>
+                <p class="respuesta"> Cuando la información que se está
+                    manejando necesita ser accesada por varios usuarios o
+                    aplicaciones externas, y cuando contiene archivos
+                    interrelacionados.</p>
+            </article>
+
+            <article class="pregunta" id="pregunta_3">
+                <h3>¿Qué es un sistema de gestión de base de datos - DBMS?</h3>
+                <p class="respuesta"> Por sus siglas Database Management System,
+                    es un software que permite el manejo de colecciones de datos
+                    (o bases de datos).<br>Algunos ejemplos de DBMS incluyen:
+                </p>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Oracle</li>
+                    </ul>
+            </article>
+
+            <article class="pregunta" id="pregunta_4">
+                <h3>Enlista y explica las funciones/responsabilidades que tienen
+                    los DBMS.</h3>
+                    <dl class="respuesta">
+                        <dt>Administración de Diccionario de Datos</dt>
+                        <dd>Los DBMS almacenan la información en un diccionario
+                            de datos. Los programas accesan a esta información a
+                            través del DMBS. [1]</dd>
+
+                        <dt><br>Administración de Almacenamiento de Datos</dt>
+                        <dd>El DBMS crea y administra estructuras complejas para
+                            el almacenamiento de datos. [1]</dd>
+
+                        <dt><br>Transformación y presentación de Datos</dt>
+                        <dd>El DBMS convierte los datos introducidos en las
+                            estructuras de datos requeridas. Le da formato a la
+                            información para presentarla de manera adecuada al
+                            usuario. [1]</dd>
+
+                        <dt><br>Administración de Seguridad</dt>
+                        <dd>El DBMS crea un sistema de seguridad que asegura la
+                            seguridad del usuario y la privacidad de sus datos.
+                            Este sistema de seguridad determina qué usuarios
+                            pueden acceder a la base de datos, qué datos puede
+                            ver, y qué acciones puede hacer con esos datos (
+                            leer, agregar, modificar, borrar). [1]</dd>
+
+                        <dt><br>Control de Acceso Multi Usuario</dt>
+                        <dd>El DBMS se asegura de que múltiples usuarios puedan
+                            acceder a la base de datos sin comprometer la
+                            integridad de los datos. [1]</dd>
+
+                        <dt><br>Administración de Recuperación y Respaldos</dt>
+                        <dd>En caso de que exista una falla, el DBMS proporciona
+                            un respaldo y la recuperación de datos, asegurando
+                            así su seguridad e integridad. [1]</dd>
+
+                        <dt><br>Administración de Integridad de Datos</dt>
+                        <dd>Promueve y emplea reglas de integridad, reduciendo
+                            la redundancia, y maximizando la consistencia de la
+                            información. [1]</dd>
+
+                        <dt><br>Lenguajes de Acceso a la Base de Datos e
+                            Interfaces de aplicaciones programadas.</dt>
+                        <dd>Proporciona el acceso a la información por medio de
+                            un lenguaje de consultas, el cual es un lenguaje no
+                            procedimental. La mayoría de los DBMS utilizan SQL
+                            (Structured Query Language). [2]</dd>
+
+                        <dt><br>Interfaces de comunicación de Base de Datos</dt>
+                        <dd>Promueve interfaces intermediarias entre la Base de
+                            Datos y el usuario. Por ejemplo, dentro de un
+                            navegador web. [2]</dd>
+                    </dl>
+            </article>
+
+            <article class="pregunta"  id="pregunta_5">
+                <h3>Ejemplifica y justifica en que proyecto de los que has
+                    realizado hubiera sido conveniente utilizar una base de
+                    datos.</h3>
+                <p class="respuesta">
+                    Para la materia de diseño interactivo, mi equipo y yo
+                    hicimos una página web sobre la nutrición. Una función que
+                    quisimos implementar (pero al final no lo hicimos) era tener
+                    un perfil con el nombre, peso, edad y
+                    porcentaje de grasa corporal del usuario, para que pudiera
+                    ver su progreso al seguir alguna dieta y un plan de
+                    ejercicio.<br>Una base de datos habría sido ideal para
+                    implementar esta función, pues tendríamos todos los perfiles
+                    de los usuarios, así como las dietas y planes de ejercicio
+                    de cada uno.
+                </p>
+            </article>
+        </section>
+
+        <section class="fuentes">
+            <h2>Fuentes Consultadas:</h2>
+            <ul>
+                <li>[1] http://www.myreadingroom.co.in/notes-and-studymaterial/65-dbms/465-functions-of-dbms.html</li>
+                <li>[2] Jay Daves, Funciones de un DBMS, 10, 2016.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <footer>Mauricio Alvarez Milán - A01704948. Febrero del 2020.</footer>
+    </body>
+</html>
