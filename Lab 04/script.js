@@ -30,5 +30,35 @@ function sumaNumeros(){
     let termino_timer = Date.now();
     let tiempo_tardado = (Date.now() - inicio_timer)/1000;
     document.write("<br>Tardaste " + tiempo_tardado + " segundos en contestar");
+}
 
+function arregloNumeros(arr){
+    let contador_negativos = 0;
+    let contador_ceros = 0;
+    let contador_mayores = 0;
+
+    document.write("[")
+    for (let i = 0; i < arr.length; i++) {
+        if(i < arr.length-1){
+            document.write(arr[i] + ", ");
+        }
+        else {
+            document.write(arr[i]);
+        }
+
+        if(arr[i] < 0){
+            contador_negativos++;
+        }
+        else if (arr[i] > 0) {
+            contador_mayores++;
+        }
+        else {
+            contador_ceros++;
+        }
+    }
+
+    document.write("]<br>");
+    document.writeln("Cantidad de ceros: " + contador_ceros);
+    document.writeln("Números negativos: " + contador_negativos);
+    document.writeln("Números positivos: " + contador_mayores);
 }
