@@ -77,3 +77,15 @@ function promedios(mat){
     document.write("<br>3er promedio: " + Math.floor(promedio[2]));
     document.write("<br>4to promedio: " + Math.floor(promedio[3]));
 }
+
+function inverso(numero){
+    let numero_invertido = 0;
+    let numero_auxiliar = numero;
+	while(numero_auxiliar > 0){
+		numero_invertido = numero_invertido*10 + (numero_auxiliar % 10);
+		numero_auxiliar = Math.floor(numero_auxiliar/10);
+	}
+
+    document.write("Número original: " + numero);
+    document.write("<br>Número invertido: " + numero_invertido);
+}
