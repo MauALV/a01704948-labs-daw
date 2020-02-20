@@ -62,3 +62,18 @@ function arregloNumeros(arr){
     document.writeln("Números negativos: " + contador_negativos);
     document.writeln("Números positivos: " + contador_mayores);
 }
+
+function promedios(mat){
+    let promedio = [0, 0, 0, 0];
+
+	for(let i = 0; i < 4; i++){
+		for( let j = 0; j < 4; j++){
+			promedio[i] +=mat[i][j];
+		}
+		promedio[i] /=3;
+	}
+    document.write("1er promedio: " + Math.floor(promedio[0]));
+    document.write("<br>2do promedio: " + Math.floor(promedio[1]));
+    document.write("<br>3er promedio: " + Math.floor(promedio[2]));
+    document.write("<br>4to promedio: " + Math.floor(promedio[3]));
+}
