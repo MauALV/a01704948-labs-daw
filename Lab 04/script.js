@@ -89,3 +89,16 @@ function inverso(numero){
     document.write("Número original: " + numero);
     document.write("<br>Número invertido: " + numero_invertido);
 }
+
+function verificaNumero(){
+    var numeroTelefonico = new Object();
+    numeroTelefonico.valor = document.getElementById('numero').value;
+    if(numeroTelefonico.valor.length < 10 ||
+        numeroTelefonico.valor.length > 10){
+        alert("El número que ingresaste no es válido. Debe tener 10 dígitos.\nTu número es: " + numeroTelefonico.valor);
+    }
+    else {
+        alert("El número que ingresaste es válido! \nTu número es: " + numeroTelefonico.valor);
+    }
+
+}
