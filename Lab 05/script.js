@@ -1,4 +1,4 @@
-function validarPassword(){
+function validarPassword(formulario_password){
     let re; //regular expression for validating characters
 
     if(formulario_password.password1.value == ""){
@@ -51,4 +51,63 @@ function validarPassword(){
     }
     alert("Tu contraseña es correcta: " + formulario_password.password1.value);
     return true;
+}
+
+
+
+function comprarProductos() {
+    let prod_1 = document.getElementById('productos_1');
+    let prod_2 = document.getElementById('productos_2');
+    let prod_3 = document.getElementById('productos_3');
+
+    let cant_1 = document.getElementById('cantidad_1');
+    let cant_2 = document.getElementById('cantidad_2');
+    let cant_3 = document.getElementById('cantidad_3');
+    let precio_1, precio_2, precio_3;
+
+    switch (prod_1.options[prod_1.selectedIndex].value) {
+        case "switch":
+            precio_1 = 8999;
+            break;
+
+        case "smash":
+            precio_1 = 1499;
+            break;
+
+        case "joycon":
+            precio_1 = 2499;
+            break;
+    }
+
+    switch (prod_2.options[prod_2.selectedIndex].value) {
+        case "switch":
+            precio_2 = 8999;
+            break;
+
+        case "smash":
+            precio_2 = 1499;
+            break;
+
+        case "joycon":
+            precio_2 = 2499;
+            break;
+    }
+
+    switch (prod_3.options[prod_3.selectedIndex].value) {
+        case "switch":
+            precio_3 = 8999;
+            break;
+
+        case "smash":
+            precio_3 = 1499;
+            break;
+
+        case "joycon":
+            precio_3 = 2499;
+            break;
+    }
+
+    let suma = (precio_1*formulario_venta.cantidad_1.value + precio_2*formulario_venta.cantidad_2.value + precio_3*formulario_venta.cantidad_3.value);
+    let total = .16 * suma;
+    alert("¡Tu compra fue exitosa!\nCosto total (IVA incluido): $" + total);
 }

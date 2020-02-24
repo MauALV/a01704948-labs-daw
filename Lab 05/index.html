@@ -9,7 +9,7 @@
         <hr>
         <section id="ejercicios">
             <h2>Ejercicios</h2>
-            <article class="verificar_password">
+            <article class="ejercicio">
                 <h3>Validar password</h3>
                 <p>Tu contraseña debe incluir por lo menos 6 caracteres,
                     incluyendo mayúsculas, minúsculas y números.</p>
@@ -19,6 +19,70 @@
                     <label for="validate_password">Comprueba tu contraseña:</label><br>
                     <input type="password" id="validate_password" name="password2"><br><br>
                     <button type="submit" name="button">Enviar</button>
+                </form>
+            </article>
+
+            <article class="ejercicio">
+                <h3>Venta de productos</h3>
+                <table border="1">
+                    <tr align="left">
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Switch Neón 32GB - Standard Edition</td>
+                        <td>Consola</td>
+                        <td>$ 8,999.00</td>
+                    </tr>
+                    <tr>
+                        <td>Super Smash Bros. Ultimate - Nintendo Switch - Standard Edition</td>
+                        <td>Videojuego</td>
+                        <td>$ 1,499.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Joy-Con Pro Controller - Nintendo Switch - Standard Edition</td>
+                        <td>Accesorio</td>
+                        <td>$ 2,499.00</td>
+                    </tr>
+                </table>
+
+                <h4>Selecciona tus artículos: (Elige tres)</h4>
+                <form name="formulario_venta" action="index.html" method="post" onsubmit="comprarProductos()">
+                    <label for="productos_1">Producto 1:</label>
+                    <select id="productos_1" name="productos_1">
+                        <option value="switch">Nintendo Switch Neón 32 GB - Standard Edition</option>
+                        <option value="smash">Super Smash Bros. Ultimate - Nintendo Switch - Standard Edition</option>
+                        <option value="joycon">Nintendo Joy-Con Pro Controller - Nintendo Switch - Standard Edition</option>
+                    </select><br>
+
+                    <label for="cantidad_1">Cantidad:</label>
+                    <input type="number" name="cantidad_1" value="">
+                    <br><br>
+
+                    <label for="productos_2">Producto 2:</label>
+                    <select id="productos_2" name="productos_2">
+                        <option value="switch">Nintendo Switch Neón 32 GB - Standard Edition</option>
+                        <option value="smash">Super Smash Bros. Ultimate - Nintendo Switch - Standard Edition</option>
+                        <option value="joycon">Nintendo Joy-Con Pro Controller - Nintendo Switch - Standard Edition</option>
+                    </select><br>
+
+                    <label for="cantidad_2">Cantidad:</label>
+                    <input type="number" name="cantidad_2" value="">
+                    <br><br>
+
+                    <label for="productos_3">Producto 3:</label>
+                    <select id="productos_3" name="productos_3">
+                        <option value="switch">Nintendo Switch Neón 32 GB - Standard Edition</option>
+                        <option value="smash">Super Smash Bros. Ultimate - Nintendo Switch - Standard Edition</option>
+                        <option value="joycon">Nintendo Joy-Con Pro Controller - Nintendo Switch - Standard Edition</option>
+                    </select><br>
+
+                    <label for="cantidad_3">Cantidad:</label>
+                    <input type="number" name="cantidad_3" value="">
+                    <br><br>
+
+                    <button type="submit" name="comprar">Comprar</button>
                 </form>
             </article>
         </section>
