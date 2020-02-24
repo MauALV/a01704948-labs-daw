@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 05 - A01704948</title>
+    </head>
+    <body>
+        <h1>Lab 05</h1>
+        <hr>
+        <section id="ejercicios">
+            <h2>Ejercicios</h2>
+            <article class="verificar_password">
+                <h3>Validar password</h3>
+                <p>Tu contraseña debe incluir por lo menos 6 caracteres,
+                    incluyendo mayúsculas, minúsculas y números.</p>
+                <form name="formulario_password" action="index.html" method="post" onsubmit="return validarPassword(this)">
+                    <label for="enter_password">Introduce tu contraseña:</label><br>
+                    <input type="password" id="enter_password" name="password1"><br>
+                    <label for="validate_password">Comprueba tu contraseña:</label><br>
+                    <input type="password" id="validate_password" name="password2"><br><br>
+                    <button type="submit" name="button">Enviar</button>
+                </form>
+            </article>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas a responder</h2>
+        </section>
+        <hr>
+        <footer>Mauricio Alvarez Milán - A01704948. Febrero del 2020.</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
