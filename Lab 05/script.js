@@ -111,3 +111,7 @@ function comprarProductos() {
     let total = .16 * suma;
     alert("¡Tu compra fue exitosa!\nCosto total (IVA incluido): $" + total);
 }
+
+function clasificaIP(formulario_ip) {
+    
+}
