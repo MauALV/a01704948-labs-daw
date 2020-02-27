@@ -20,6 +20,7 @@ h1 {
     right:10px;
     opacity:0.5;
     color:white;
+    z-index: -1;
 }
 
 h2, h3 {
