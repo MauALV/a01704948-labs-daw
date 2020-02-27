@@ -124,3 +124,10 @@ function clasificaIP(formulario_grados) {
         alert(grados_celsius + "°C = " + grados_farenheit + "°F = " + grados_kelvin + "°K");
     }
 }
+
+function cambiaColor(){
+    let texto = document.getElementsByTagName('h1');
+    for(var i = 0; i < texto.length; i++) {
+        texto[i].style.color = "red";
+    }
+}
