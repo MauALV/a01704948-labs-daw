@@ -140,3 +140,7 @@ function muestraAyuda() {
     }
 
 }
+
+function activaRecordatorio(){
+    setTimeout(function(){ alert("¡No te duermas, mira mi laboratorio!"); }, 3000);
+}
