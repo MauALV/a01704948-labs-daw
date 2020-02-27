@@ -112,6 +112,15 @@ function comprarProductos() {
     alert("¡Tu compra fue exitosa!\nCosto total (IVA incluido): $" + total);
 }
 
-function clasificaIP(formulario_ip) {
-    
+function clasificaIP(formulario_grados) {
+    let grados_celsius = formulario_grados.input_celsius.value; //stores de input value in variable
+
+    if(isNaN(grados_celsius)) { //if the input is not a number, alert the user
+        alert("Por favor introduce un número válido. " + " \"" + grados_celsius + "\" no es un número.");
+    }
+    else {
+        let grados_farenheit = (grados_celsius * 9/5) + 32;
+        let grados_kelvin = parseFloat(grados_celsius) + 273.15; //parseFloat converts the input to a float to prevent concatenation instead of sum
+        alert(grados_celsius + "°C = " + grados_farenheit + "°F = " + grados_kelvin + "°K");
+    }
 }

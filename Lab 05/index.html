@@ -88,7 +88,11 @@
 
             <article class="ejercicio">
                 <h3>Ejercicio 3 (personal)</h3>
-                <a href="ejercicio3.html">Haz clic aquí para llevarte al ejercicio 3.</a>
+                <form name="formulario_grados" action="index.html" method="post" onsubmit="clasificaIP(this)">
+                    <label>Introduce los grados celsius:</label><br>
+                    <input type="text" id="input_celsius" name="input_celsius" value="" size="3px">
+                    <button type="submit" name="button">Convertir</button>
+                </form>
             </article>
         </section>
 
