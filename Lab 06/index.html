@@ -13,13 +13,13 @@
             <h2>Ejercicios</h2>
             <article class="ejercicio">
                 <h3>Validar password</h3>
-                <p>Tu contraseña debe incluir por lo menos 6 caracteres,
-                    incluyendo mayúsculas, minúsculas y números.</p>
+
                 <form name="formulario_password" action="index.html" method="post" onsubmit="return validarPassword(this)">
                     <label for="enter_password">Introduce tu contraseña:</label><br>
-                    <input type="password" id="enter_password" name="password1"><br><br>
+                    <input type="password" id="enter_password" name="password1" onfocus="muestraAyuda()"><br><br>
                     <label for="validate_password">Comprueba tu contraseña:</label><br>
                     <input type="password" id="validate_password" name="password2"><br><br>
+                    <div class="ayuda" id="ayuda"></div>
                     <button type="submit" name="button">Enviar</button>
                 </form>
             </article>

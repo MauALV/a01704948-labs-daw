@@ -131,3 +131,12 @@ function cambiaColor(){
         texto[i].style.color = "red";
     }
 }
+
+var validateOnce = true; //used to add the help text only once
+function muestraAyuda() {
+    if(validateOnce){
+        document.getElementById('ayuda').innerHTML += "<p>Recuerda que tu contraseña debe incluir por lo menos 6 caracteres, incluyendo mayúsculas, minúsculas y números.</p>";
+        validateOnce = false; //changes value to stop adding text continuously
+    }
+
+}
