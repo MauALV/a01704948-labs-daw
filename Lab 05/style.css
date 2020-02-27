@@ -1,0 +1,57 @@
+body {
+    background-color: #41b3a3;
+    font-family: sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+h2, h3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#ejercicios {}
+
+#input_celsius {
+    font-size: 16px;
+    border-width: 2px;
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 9px 3px 12px 0px rgba(42, 42, 42, .20);
+}
+
+#input_celsius:focus {
+    outline: none;
+}
+
+.button {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.button:hover {
+	background-color:#408c99;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
