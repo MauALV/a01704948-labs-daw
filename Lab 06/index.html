@@ -20,9 +20,9 @@
                     <input type="password" id="enter_password" name="password1" onfocus="muestraAyuda()"><br><br>
                     <label for="validate_password">Comprueba tu contraseña:</label><br>
                     <input type="password" id="validate_password" name="password2"><br><br>
-                    <div class="ayuda" id="ayuda"></div>
                     <button type="submit" name="button">Enviar</button>
                 </form>
+                <div id="ayuda"></div>
             </article>
             <hr>
 
@@ -99,9 +99,16 @@
                     <button type="submit" name="button" class="button">Convertir</button>
                 </form>
             </article>
-            <hr>
 
+            <article class="ejercicio">
+                <h3>Drag and Drop</h3>
+                <img id="cr7" src="bicho.jpg" alt="El Bicho" draggable="true" ondragstart="drag(event)">
+                <div id="div_drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p>Pon aquí al bicho. SIUUUU</p>
+                </div>
+            </article>
         </section>
+        <hr>
 
         <section id="preguntas">
             <h2>Preguntas a responder</h2>
