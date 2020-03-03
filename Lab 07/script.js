@@ -1,21 +1,21 @@
 function validarPassword(formulario_password) {
     let re; //regular expression for validating characters
-
+    let divAlerta = document.getElementById('alerta');
     if(formulario_password.password1.value == "") {
-        alert("Error: el campo está vacío.");
+        divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>El Campo está vacío.</div>";
         formulario_password.password1.focus();
         return false;
     }
 
     if(formulario_password.password2.value == "") {
-        alert("Error: el campo está vacío.")
+        divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>El Campo está vacío.</div>";
         formulario_password.password2.focus();
         return false;
     }
 
     if(formulario_password.password1.value == formulario_password.password2.value) { //if both inputs match
         if(formulario_password.password1.value.length < 6){
-            alert("Error: la contraseña debe tener por lo menos seis caracteres.");
+            divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>La contraseña debe tener por lo menos seis caracteres.</div>";
             formulario_password.password1.focus();
             return false;
         }
@@ -23,7 +23,7 @@ function validarPassword(formulario_password) {
         re = /[0-9]/; //validate for numbers from 0 to 9
 
         if(!re.test(formulario_password.password1.value)) { //if it doesn't match the regular expression
-            alert("Error: la contraseña debe contener al menos un número.");
+            divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>La contraseña debe tener por lo menos un número.</div>";
             formulario_password.password1.focus();
             return false;
         }
@@ -31,7 +31,7 @@ function validarPassword(formulario_password) {
         re = /[a-z]/ //validate for lower case letters
 
         if(!re.test(formulario_password.password1.value)) {
-            alert("Error: la contraseña debe contener al menos una letra minúscula.");
+            divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>La contraseña debe tener por lo menos una letra minúscula.</div>";
             formulario_password.password1.focus();
             return false;
         }
@@ -39,13 +39,13 @@ function validarPassword(formulario_password) {
         re = /[A-Z]/ //validate for upper case letters
 
         if(!re.test(formulario_password.password1.value)) {
-            alert("Error: la contraseña debe contener al menos una letra mayúscula.");
+            divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>La contraseña debe tener por lo menos una letra mayúscula.</div>";
             return false;
         }
     }
 
     else {
-        alert("Por favor comprueba que hayas introducido correctamente tu contraseña.");
+        divAlerta.innerHTML += "<div class=\"uk-alert-danger\" uk-alert><a class=\"uk-alert-close\" uk-close></a>Por favor comprueba que hayas introducido correctamente tu contraseña.</div>";
         formulario_password.password1.focus();
         return false;
     }
