@@ -13,7 +13,23 @@
             <article class="ejercicio" id="ejercicio1">
                 <h3>Ejercicio 1</h3>
                 <?php
-
+                    $numeros1 = array(1, 2, 3, 4, 5);
+                    $numeros2 = array(100, 75, 90, 48, 80, 1);
+                    function promedio($arr) {
+                        $suma = 0;
+                        for ($i=0; $i < sizeof($arr); $i++) {
+                            $suma += $arr[$i];
+                        }
+                        $suma /= sizeof($arr);
+                        return $suma;
+                    }
+                    echo "Arreglo 1: [1, 2, 3, 4, 5]";
+                    echo "<br>";
+                    echo "El promedio de numeros es " . promedio($numeros1);
+                    echo "<br> <br>";
+                    echo "Arreglo 2: [100, 75, 90, 48, 80, 1]";
+                    echo "<br>";
+                    echo "El promedio de numeros es " . promedio($numeros2);
                 ?>
             </article>
             <article class="ejercicio" id="ejercicio2">
