@@ -10,11 +10,14 @@
         </header>
         <section>
             <h2>Ejercicios</h2>
+            <?php
+                $numeros1 = array(1, 2, 3, 4, 5);
+                $numeros2 = array(100, 75, 90, 48, 80, 1);
+            ?>
             <article class="ejercicio" id="ejercicio1">
                 <h3>Ejercicio 1</h3>
                 <?php
-                    $numeros1 = array(1, 2, 3, 4, 5);
-                    $numeros2 = array(100, 75, 90, 48, 80, 1);
+
                     function promedio($arr) {
                         $suma = 0;
                         for ($i=0; $i < sizeof($arr); $i++) {
@@ -77,8 +80,38 @@
                         echo "<br><br>";
                         lista($numeros2);
                     ?>
-
                 </ul>
+            </article>
+            <article class="ejercicio" id="ejercicio4">
+                <h3>Ejercicio 4</h3>
+                <?php
+                    function cuadradosCubos($n) {
+                        echo "<tr>";
+                        for ($i = 1; $i <= $n; $i++) {
+                            echo "<td>" . $i;
+                        }
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        for($i = 1; $i <= $n; $i++) { //cuadrados
+                            echo "<td> " . pow($i, 2) . "</td>";
+                        }
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        for($i = 1; $i <= $n; $i++) { //cubos
+                            echo "<td> " . pow($i, 3) . "</td>";
+                        }
+                        echo "</tr>";
+                    }
+                ?>
+                <table border="1">
+                    <?php cuadradosCubos(10); ?>
+                </table>
+                <br><br>
+                <table border="1">
+                    <?php cuadradosCubos(35); ?>
+                </table>
             </article>
         </section>
         <hr>
