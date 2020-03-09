@@ -35,16 +35,50 @@
             <article class="ejercicio" id="ejercicio2">
                 <h3>Ejercicio 2</h3>
                 <?php
-
+                    function mediana($arr) {
+                        sort($arr);
+                        $mitad = sizeof($arr)/2;
+                        if(sizeof($arr) % 2 == 0) {
+                            return ($arr[$mitad] + $arr[$mitad-1])/2;
+                        }
+                        else {
+                            return $arr[sizeof($arr)/2];
+                        }
+                    }
+                    echo "Arreglo 1: [1, 2, 3, 4, 5]";
+                    echo "<br>";
+                    echo "La mediana es " . mediana($numeros1);
+                    echo "<br> <br>";
+                    echo "Arreglo 2: [100, 75, 90, 48, 80, 1]";
+                    echo "<br>";
+                    echo "La mediana es " . mediana($numeros2);
 
                 ?>
             </article>
             <article class="ejercicio" id="ejercicio3">
                 <h3>Ejercicio 3</h3>
-                <?php
+                <ul>
+                    <?php
+                        function lista($arr) {
+                            sort($arr);
+                            echo "<li> De menor a mayor: ";
+                            for($i = 0; $i < sizeof($arr); $i++) {
+                                echo $arr[$i] . " ";
+                            }
+                            echo "<li> De mayor a menor: ";
+                            rsort($arr);
+                            for($i = 0; $i < sizeof($arr); $i++) {
+                                echo $arr[$i] . " ";
+                            }
+                            echo "<li> Promedio: " . promedio($arr);
+                            echo "<li> Mediana: " . mediana($arr);
+                        }
+                        lista($numeros1);
+                        echo "<br><br>";
+                        lista($numeros2);
+                    ?>
 
-
-                ?>
+                </ul>
             </article>
         </section>
         <hr>
