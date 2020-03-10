@@ -68,12 +68,12 @@
                             for($i = 0; $i < sizeof($arr); $i++) {
                                 echo $arr[$i] . " ";
                             }
-                            echo "<li> De mayor a menor: ";
+                            echo "</li> <li> De mayor a menor: ";
                             rsort($arr);
                             for($i = 0; $i < sizeof($arr); $i++) {
                                 echo $arr[$i] . " ";
                             }
-                            echo "<li> Promedio: " . promedio($arr);
+                            echo "</li> <li> Promedio: " . promedio($arr) . "</li>";
                             echo "<li> Mediana: " . mediana($arr);
                         }
                         lista($numeros1);
