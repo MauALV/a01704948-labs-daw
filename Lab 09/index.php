@@ -17,7 +17,6 @@
             <article class="ejercicio" id="ejercicio1">
                 <h3>Ejercicio 1</h3>
                 <?php
-
                     function promedio($arr) {
                         $suma = 0;
                         for ($i=0; $i < sizeof($arr); $i++) {
@@ -119,6 +118,10 @@
             <h2>Preguntas a Responder</h2>
             <article class="pregunta" id="pregunta1">
                 <h3>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</h3>
+                <p>Muestra la información del estado actual de PHP. Esto incluye información sobre las opciones de compilación , versión e información del sistema operativo.</p>
+                <p>Me llama la atenión que esta función pueda recibir parámetros para personalizar la salida. Por ejemplo <em>phpinfo(<strong>INFO_CREDITS</strong>)</em> meustra únicamente los créditos de PHP.</p>
+                <p><em>phpinfo(<strong>INFO_ENVIRONMENT</strong>)</em> muestra la información de variables de entorno.</p>
+                <p>De igual forma, me aprece curioso que la función regrese True o False se funciona o no.</p>
             </article>
             <article class="pregunta" id="pregunta2">
                 <h3>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</h3>
