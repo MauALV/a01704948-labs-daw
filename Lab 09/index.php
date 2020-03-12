@@ -112,6 +112,18 @@
                     <?php cuadradosCubos(35); ?>
                 </table>
             </article>
+            <article class="ejercicio" id="ejercicio5">
+                <h3>Ejercicio 5: Convertidor de grados celsius a farenheit</h3>
+                <p>Los inputs de prueba fueron <em>140</em> y <em>45</em></p>
+                <?php
+                    function convierteGrados($grados) {
+                        $grados_farenheit = ($grados * 9/5) + 32;
+                        return $grados_farenheit;
+                    }
+                ?>
+                <p>Prueba con 140 = <?= convierteGrados(140);?></p><br>
+                <p>Prueba con 45 = <?= convierteGrados(45);?></p>
+            </article>
         </section>
         <hr>
         <section>
