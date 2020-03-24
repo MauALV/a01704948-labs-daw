@@ -1,0 +1,12 @@
+1. al ejecutar el comando sp_help, se muestran la información de todas las columnas de la tabla (en este caso
+"materiales"), es decir, su nombre, tipo, longitud, etc.
+
+2. al ejecutar el script dentro de "crear.sql" se generan automáticamente las 4 tablas. Esto es útil en proyectos
+más grandes, donde necesitamos crear distintas tablas sin perder el tiempo haciéndolas una por una.
+
+3. Los archivos contienen información correspondiente a las columnas de las tablas que creamos.
+
+4. Ambos archivos (materiales.sql y materiales.csv) son separados por comas "," y cada salto de linea es una nueva
+fila.
+
+5. Al ejectuar SELECT * FROM Materiales, la consulta despliega todas las tuplas existentesde la tabla materiales.
