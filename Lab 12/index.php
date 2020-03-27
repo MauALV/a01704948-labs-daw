@@ -1,11 +1,16 @@
 <?php
     session_start();
+    $_SESSION["nombre"] = $_POST["nombre"];
     include '_header.html';
 ?>
+
+    <div class="uk-container">
+        <h1><?= "Bienvenido, " . $_SESSION["nombre"]; ?></h1>
+    </div>
     <!-- SUBIR FOTO -->
     <div class="uk-section" id="subir-foto" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <div class="uk-margin" uk-margin>
-            <form class="" action="controllerUpload.php" method="post" enctype="multipart/form-data">
+        <div class="uk-container">
+            <form class="form-sube-foto" action="controllerUpload.php" method="post" enctype="multipart/form-data">
                 <div uk-form-custom="target: true">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input class="uk-input uk-form-width-medium" type="text" placeholder="Selecciona archivo" disabled>
@@ -18,19 +23,21 @@
     <!-- PREGUNTAS -->
     <div class="uk-section uk-background-muted" id="preguntas" uk-scrollspy="cls: uk-animation-fade; repeat: true">
         <div class="uk-container">
-            <h2>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h2>
+            <h2>Preguntas a responder</h2><br>
+
+            <h3>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h3>
             <p></p>
             <br>
 
-            <h2>¿Cuál es la diferencia entre una variable de sesión y una cookie?</h2>
+            <h3>¿Cuál es la diferencia entre una variable de sesión y una cookie?</h3>
             <p></p>
             <br>
 
-            <h2>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</h2>
+            <h3>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</h3>
             <p></p>
             <br>
 
-            <h2>¿Qué es CSRF y cómo puede prevenirse?</h2>
+            <h3>¿Qué es CSRF y cómo puede prevenirse?</h3>
             <p></p>
             <br>
         </div>

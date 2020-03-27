@@ -1,8 +1,4 @@
 <?php include '_header.html'; ?>
-    <?php if (isset($error)): ?>
-        <div class="red-text">Error: <?= $error ?></div>
-    <?php endif; ?>
-
     <div class="uk-container">
         <h1>Lab 12 - A01704948</h1>
 
@@ -10,14 +6,14 @@
             <div class="uk-margin">
                 <div class="uk-inline">
                     <span class="uk-form-icon" uk-icon="icon: user"></span>
-                    <input class="uk-input" type="text">
+                    <input class="uk-input" type="text" name="nombre">
                 </div>
           </div>
 
             <div class="uk-margin">
                 <div class="uk-inline">
                   <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                  <input class="uk-input" type="password"><br>
+                  <input class="uk-input" type="password" name="pass"><br>
                 </div>
             </div>
 
