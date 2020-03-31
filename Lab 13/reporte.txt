@@ -1,0 +1,45 @@
+Mauricio Alvarez Milán - A01704948
+EJERCICIO 2:
+Agrega nuevamente el registro a la tabla de materiales:
+  INSERT INTO Materiales values(1000, 'xxx', 1000)
+
+¿Qué ocurrió?
+Como la Clave '1000' ya existía, manda un error informando que la llave fue duplicada y por lo tanto, no puede ser agregada a la tabla.
+
+¿Qué información muestra esta consulta?
+Yo estoy utilizando phpmyadmin, y no esa consulta no es válida.
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+ALTER TABLE Tabla add constraint nombreDeConstraint PRIMARY KEY (nombreDelCampo)
+
+
+Intenta insertar en la tabla entregan el siguiente registro:
+  INSERT INTO entregan values (0, 'xxx', 0, '1-jan-02', 0) ;
+
+-----------------------------------------------------------------------------
+
+EJERCICIO 3:
+¿Qué particularidad observas en los valores para clave, rfc y numero?
+Que todos son valores nulos.
+
+¿Cómo responde el sistema a la inserción de este registro?
+No puede agregar el registro por la misma razón que son nulos.
+
+¿Qué significa el mensaje que emite el sistema?
+¿Qué significado tiene la sentencia anterior?
+Significa que el constraint de la llave foránea no se está cumpliendo.
+
+-----------------------------------------------------------------------------
+
+EJERCICIO 4:
+¿Qué uso se le está dando a GETDATE()?
+Regresa la fecha y hora actual.
+
+¿Tiene sentido el valor del campo de cantidad?
+No, porque es 0.
+
+Intenta insertar un registro con cantidad igual o menor que 0.
+¿Cómo responde el sistema?
+¿Qué significa el mensaje?
+No permite agregar el registro.
+
