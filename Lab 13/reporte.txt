@@ -43,3 +43,12 @@ Intenta insertar un registro con cantidad igual o menor que 0.
 ¿Qué significa el mensaje?
 No permite agregar el registro.
 
+-----------------------------------------------------------------------------
+
+INTEGRIDAD REFERENCIAL:
+
+La integridad referencial se refiere a que una base de datos no puede tener valores de llaves foráneas si la tupla no está completa. [1]
+
+REFERENCIAS:
+
+[1] https://techlandia.com/integridad-referencial-evitar-estos-problemas-programador-info_262424/
