@@ -1,0 +1,13 @@
+<form method="POST">
+    <?=crear_select("id", "nombre", "estado");?>
+        <?=crear_select("id", "nombre", "lugar");?>
+            <input class="waves-effect waves-light btn" type="submit" value="Buscar">
+</form>
+
+<form method="post" action="controlador_registra_caso.php">
+    <br><input class="waves-effect waves-light btn" type="submit" value="Agregar nuevo caso">
+</form>
+
+<form method="post" action="controlador_elimina_caso.php">
+    <br><input class="waves-effect waves-light btn" type="submit" value="Eliminar caso">
+</form>
