@@ -18,7 +18,7 @@ En este caso, que contenga 'Lad' y que el costo sea mayor a 20.
 -----------------------------------
 
 ¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación cliente-servidor?
-Simplifica la utilizacion de funciones en SQL
+Simplifica la utilizacion de funciones en SQL.
 
 ¿Qué ventajas tiene utilizar SP en un proyecto?
 Estamos ahorrando lineas de codigo, donde podemos ejecutar simplemente el procedimiento en lugar de ejecutar las mismas lineas
