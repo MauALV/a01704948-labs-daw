@@ -1,0 +1,2 @@
+Este laboratorio se trabajó como parte del proyecto. Link al commit final de la implementación:
+https://github.com/BernardoEstrada/Qarinio-animal/commit/fae964e70b34fd7afe65793c7574dcc4653ec7ad
