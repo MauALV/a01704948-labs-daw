@@ -3,7 +3,7 @@ function connectDB() {
     $servername = 'localhost';
     $username = "root";
     $password = "";
-    $dbname = "demo";
+    $dbname = "examen2p";
 
     $con = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -78,10 +78,10 @@ function modifyDb($dml) {
     return $res;
 }
 
-function agregarZombi($nombre, $apellido, $idEstado) {
-    $sql = "CALL agregaZombi('$nombre', '$apellido', $idEstado);";
+function agregarIncidente($idLugar, $idTipoIncidente) {
+    $sql = "CALL agregaIncidente($idLugar, $idTipoIncidente);";
     return sqlqry($sql);
-    //print_r(mysqli_error($res));
+
 }
 
 function getOpciones($id, $campo, $tabla) {
@@ -95,7 +95,7 @@ function getOpciones($id, $campo, $tabla) {
 
     echo $option;
 }
-function muestraZombis() {
+/*function muestraZombis() {
     $conDb = connectDb();
 
     $qryZombis = "
@@ -136,5 +136,5 @@ function muestraZombis() {
     closeDb($conDb);
     $tabla .= "</tbody></table>";
     return $tabla;
-}
+}*/
 ?>

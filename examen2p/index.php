@@ -10,10 +10,10 @@ require_once 'util.php';
 
         <div class="container">
 
-            <h3>Zombis</h3>
+            <h3>Jurassic Park</h3>
 
-            <a class="right btn-floating btn-large waves-effect waves-light red" href="vista_agregar_zombi.php"><i class="material-icons">add</i></a>
-            <?= muestraZombis(); ?>
+            <a class="right btn-floating btn-large waves-effect waves-light red" href="vista_agregar_incidente.php"><i class="material-icons">add</i></a>
+            
 
         </div>
 
