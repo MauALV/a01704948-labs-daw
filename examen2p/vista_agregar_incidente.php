@@ -1,29 +1,29 @@
 <?php
 require_once 'util.php';
 ?>
-<h1>Agregar nuevo incidente</h1>
 <div class="modal-content">
-        <div class="row">
-            <div class="input-field col s12">
-                <select id="lugar" name="lugar">
-                    <option selected disabled value = "">Seleccione una opcion:
-                    </option>
-                    <?= getOpciones('idLugar', 'nombreLugar', 'lugar') ?>
-                </select>
-                <label for="lugar">Lugar:</label>
-            </div>
+    <h1>Agregar nuevo incidente</h1>
+    <div class="row">
+        <div class="input-field col s12">
+            <select id="lugar" name="lugar">
+                <option selected disabled value = "">Seleccione una opcion:
+                </option>
+                <?= getOpciones('idLugar', 'nombreLugar', 'lugar') ?>
+            </select>
+            <label for="lugar">Lugar:</label>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="input-field col s12">
-                <select id="tipoIncidente" name="tipoIncidente">
-                    <option selected disabled value = "">Seleccione una opcion:
-                    </option>
-                    <?= getOpciones('idTipoIncidente', 'nombreTipoIncidente', 'tipoIncidente') ?>
-                </select>
-                <label for="tipoIncidente">Tipo de Incidente:</label>
-            </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <select id="tipoIncidente" name="tipoIncidente">
+                <option selected disabled value = "">Seleccione una opcion:
+                </option>
+                <?= getOpciones('idTipoIncidente', 'nombreTipoIncidente', 'tipoIncidente') ?>
+            </select>
+            <label for="tipoIncidente">Tipo de Incidente:</label>
         </div>
+    </div>
 </div>
 <div class="modal-footer">
     <button class="btn waves-effect waves-light" id="btn-registrar" name="action">Registrar

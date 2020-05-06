@@ -9,7 +9,7 @@ require_once 'util.php';
         <?php include '_navbar.html'; ?>
 
         <div class="container">
-            <h3>Jurassic Park</h3>
+            <h1>Jurassic Park</h1>
             <a class="right btn-floating btn-large waves-effect waves-light red" id="btn-agregar-incidente"><i class="material-icons">add</i></a>
             <div id="incidentes">
 
