@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Procedimientos
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `agregaIncidente` (IN `p_idLugar` INT(11), IN `p_idTipoIncidente` INT(11))  BEGIN
+CREATE PROCEDURE `agregaIncidente` (IN `p_idLugar` INT(11), IN `p_idTipoIncidente` INT(11))  BEGIN
 		INSERT INTO incidente (idLugar, idTipoIncidente) VALUES(p_idLugar, p_idTipoIncidente);
 	END$$
 
