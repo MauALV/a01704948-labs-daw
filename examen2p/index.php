@@ -9,18 +9,26 @@ require_once 'util.php';
         <?php include '_navbar.html'; ?>
 
         <div class="container">
-
             <h3>Jurassic Park</h3>
+            <a class="right btn-floating btn-large waves-effect waves-light red" id="btn-agregar-incidente"><i class="material-icons">add</i></a>
+            <div id="incidentes">
 
-            <a class="right btn-floating btn-large waves-effect waves-light red" href="vista_agregar_incidente.php"><i class="material-icons">add</i></a>
-            <?= muestraIncidentes(); ?>
-
+            </div>
         </div>
 
-    <div class="container">
-        <div id="modal-estado" class="modal">
+        <div class="container">
+            <div id="modal-agregar" class="modal" style="overflow: visible">
 
+            </div>
         </div>
-    </div>
     </main>
 <?php include '_footer.html'; ?>
+<script type="text/javascript">
+    muestraIndex();
+    $(document).ready(function() {
+        $('#modal-agregar').modal();
+    });
+    document.getElementById('btn-agregar-incidente').addEventListener("click", function(){
+        mostrarEdicion();
+    });
+</script>
