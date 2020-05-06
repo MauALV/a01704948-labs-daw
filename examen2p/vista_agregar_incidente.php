@@ -19,7 +19,7 @@ require_once 'util.php';
             <select id="tipoIncidente" name="tipoIncidente">
                 <option selected disabled value = "">Seleccione una opcion:
                 </option>
-                <?= getOpciones('idTipoIncidente', 'nombreTipoIncidente', 'tipoIncidente') ?>
+                <?= getOpciones('idTipoIncidente', 'nombreTipoIncidente', 'tipoincidente') ?>
             </select>
             <label for="tipoIncidente">Tipo de Incidente:</label>
         </div>

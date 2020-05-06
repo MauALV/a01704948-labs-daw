@@ -1,9 +1,9 @@
 <?php
 function connectDB() {
-    $servername = 'localhost';
-    $username = "root";
-    $password = "";
-    $dbname = "examen2p";
+    $servername = 'mysql1008.mochahost.com';
+    $username = "dawbdorg_1704948";
+    $password = "1704948";
+    $dbname = "dawbdorg_A01704948";
 
     $con = mysqli_connect($servername, $username, $password, $dbname);
 
