@@ -13,7 +13,7 @@ require_once 'util.php';
             <h3>Jurassic Park</h3>
 
             <a class="right btn-floating btn-large waves-effect waves-light red" href="vista_agregar_incidente.php"><i class="material-icons">add</i></a>
-            
+            <?= muestraIncidentes(); ?>
 
         </div>
 

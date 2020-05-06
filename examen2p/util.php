@@ -95,46 +95,37 @@ function getOpciones($id, $campo, $tabla) {
 
     echo $option;
 }
-/*function muestraZombis() {
+function muestraIncidentes() {
     $conDb = connectDb();
 
-    $qryZombis = "
-        SELECT z.idZombi as id, z.nombre as z_nombre, GROUP_CONCAT(e.nombreEstado SEPARATOR '|') as e_nombreEstado, GROUP_CONCAT(ze.fechaCreacion SEPARATOR '|') as ze_fecha
-        FROM zombis z, estados e, zombis_estados ze
-        WHERE z.idZombi=ze.idZombi
-        AND e.idEstado=ze.idEstado
-        GROUP BY z.nombre
-        ORDER BY z.nombre";
+    $sql = "
+        SELECT nombreLugar as 'Lugar', nombreTipoIncidente as 'Tipo de Incidente', fechaCreacion as 'Fecha'
+        FROM lugar l, tipoincidente ti, incidente i
+        WHERE l.idLugar=i.idLugar AND ti.idTipoIncidente=i.idTipoIncidente
+        ORDER BY fechaCreacion DESC";
     $tabla = "
     <table class=\"highlight\">
         <thead>
             <tr>
-                <th>Zombie</th>
-                <th>Estados</th>
+                <th>Lugar</th>
+                <th>Tipo de Incidente</th>
+                <th>Fecha</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>";
 
-    $zombis = $conDb->query($qryZombis);
-    while ($row = mysqli_fetch_array($zombis, MYSQLI_BOTH)) {
-        $estados = explode('|', $row['e_nombreEstado']);
-        $fechas = explode('|', $row['ze_fecha']);
+    $incidentes = $conDb->query($sql);
+    while ($row = mysqli_fetch_array($incidentes, MYSQLI_BOTH)) {
         $tabla .= "<tr>";
-        $tabla .= "<td>".$row['z_nombre']."</td>";
-        $tabla .= "<td>";
-        for($i = 0; $i < count($estados); $i++) {
-
-            $tabla .= $estados[$i]." (".$fechas[$i].")";
-            $tabla .= "<br>";
-        }
-        $tabla .= "</td>";
-        $tabla .= "<td><button zid=\"".$row['id']."\"class=\"btn-estado waves-effect waves-light btn\"><i class=\"material-icons left\">add</i>Registrar estado</button></td>";
+        $tabla .= "<td>".$row['Lugar']."</td>";
+        $tabla .= "<td>".$row['Tipo de Incidente']."</td>";
+        $tabla .= "<td>".$row['Fecha']."</td>";
         $tabla .= "</tr>";
     }
-    mysqli_free_result($zombis); //Liberar la memoria
+    mysqli_free_result($incidentes); //Liberar la memoria
     closeDb($conDb);
     $tabla .= "</tbody></table>";
     return $tabla;
-}*/
+}
 ?>
